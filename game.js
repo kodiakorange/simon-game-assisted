@@ -23,7 +23,7 @@ function nextSequence() {
 		setTimeout(function () {
 			animatePress(color);
 			playSound(color);
-		}, 500 * index);
+		}, 500 * (index + 1));
 	});
 	level += 1;
 	$("#level-title").text("Level " + level);
